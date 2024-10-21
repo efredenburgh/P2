@@ -30,7 +30,10 @@ DS-4002-Project-2/
 │
 ├── SCRIPTS/
 │   ├── 1-InitialDataCleaning.py
-│   └── 2-InitialDataPlots.py
+│   ├── 2-InitialDataPlots.py
+│   ├── 3-StationaritySeasonalityAnalysis.py
+│   ├── 
+│   └── 
 │
 ├── LICENSE.md
 └── README.md
@@ -43,6 +46,7 @@ DS-4002-Project-2/
 - **SCRIPTS/**: Python scripts used in the project:
   - **1-InitialDataCleaning.py**: Script to clean the initial data.world dataset.
   - **2-InitialDataPlots.py**: Script to generate exploratory visualizations.
+  - **3-StationaritySeasonalityAnalysis.py**: Script to 
 ---
 
 ## Section 3 - Instructions for Reproducing Results
