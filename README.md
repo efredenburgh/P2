@@ -41,7 +41,8 @@ DS-4002-Project-2/
   - **Analysis/**: Folder to store the analysis results.
   - **Exploratory/**: Contains all the exploratory plots generated, such as preliminary trends seen between variables.
 - **SCRIPTS/**: Python scripts used in the project:
-  - **_.py**: 
+  - **1-InitialDataCleaning.py**: Script to clean the initial data.world dataset.
+  - **2-InitialDataPlots.py**: Script to generate exploratory visualizations.
 ---
 
 ## Section 3 - Instructions for Reproducing Results
