@@ -2,7 +2,7 @@
 
 ## Section 1 - Software & Platform
 
-The main software used for this project includes VS Code with Python. We used Python's **_** and **_** packages to _. 
+The main software used for this project includes VS Code with Python. We used Python's **Statsmodels library** with **SARIMA** (Seasonal Autoregressive Integrated Moving Average), a forecasting model for time series data with a seasonal element.
 
 Most coding was performed on a Windows machine, with some portions done using a Mac.
 
@@ -30,7 +30,10 @@ DS-4002-Project-2/
 │
 ├── SCRIPTS/
 │   ├── 1-InitialDataCleaning.py
-│   └── 2-InitialDataPlots.py
+│   ├── 2-InitialDataPlots.py
+│   ├── 3-StationaritySeasonalityAnalysis.py
+│   ├── 
+│   └── 
 │
 ├── LICENSE.md
 └── README.md
@@ -41,7 +44,9 @@ DS-4002-Project-2/
   - **Analysis/**: Folder to store the analysis results.
   - **Exploratory/**: Contains all the exploratory plots generated, such as preliminary trends seen between variables.
 - **SCRIPTS/**: Python scripts used in the project:
-  - **_.py**: 
+  - **1-InitialDataCleaning.py**: Script to clean the initial data.world dataset.
+  - **2-InitialDataPlots.py**: Script to generate exploratory visualizations.
+  - **3-StationaritySeasonalityAnalysis.py**: Script to 
 ---
 
 ## Section 3 - Instructions for Reproducing Results
@@ -53,8 +58,8 @@ Follow the steps below to reproduce the results of this project:
 - Place the downloaded CSV file, **Air_Traffic_Passenger_Statistics.csv**, in the DATA/ folder of the project.
 - Run the **1-InitialDataCleaning.py** script to clean the initial dataset by removing unnecessary variables. This will result in the **Cleaned_Air_Traffic_Data.csv** file, which will be used to perform the analysis.
 
-### Step 2: 
-- 
+### Step 2: Initial Data Exploration
+- To observe initial trends in the data, run the **2-InitialDataPlots.py** script. This will output various plots for exploratory data analysis, including `airline` vs `adjusted_passenger_count`, `month` vs `adjusted_passenger_count`, and `adjusted_passenger_count` vs `year`.
 
 ### Step 3: 
 - 
