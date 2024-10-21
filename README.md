@@ -21,12 +21,10 @@ DS-4002-Project-2/
 │
 ├── OUTPUT/
 │   ├── Analysis/
-│   │   ├── 
-│   │   └── 
+│   │   ├── Autocorrelation.png
+│   │   ├── Monthly_Adjusted_Passenger_Counts.png
+│   │   └── Partial_Autocorrelation.png
 │   └── Exploratory/
-│       ├── Autocorrelation.png
-│       ├── Monthly_Adjusted_Passenger_Counts.png
-│       ├── Partial_Autocorrelation.png
 │       ├── domestic_vs_international.png
 │       ├── busiest_month.png
 │       └── top_airlines.png
