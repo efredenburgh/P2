@@ -2,7 +2,7 @@
 
 ## Section 1 - Software & Platform
 
-The main software used for this project includes VS Code with Python. We used Python's **_** and **_** packages to _. 
+The main software used for this project includes VS Code with Python. We used Python's **Statsmodels library** with **SARIMA** (Seasonal Autoregressive Integrated Moving Average), a forecasting model for time series data with a seasonal element.
 
 Most coding was performed on a Windows machine, with some portions done using a Mac.
 
