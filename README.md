@@ -49,7 +49,7 @@ DS-4002-Project-2/
 Follow the steps below to reproduce the results of this project:
 
 ### Step 1: Dataset Collection
-- Download the Air Traffic Passenger Statistics Dataset from [data.world](https://data.world/data-society/air-traffic-passenger-data/workspace/project-summary?agentid=d ata-society&datasetid=air-traffic-passenger-data). This dataset contains over 15,000 entries with information on monthly airline passengers, destinations, and destination airports.
+- Download the Air Traffic Passenger Statistics Dataset from [data.world](https://data.world/data-society/air-traffic-passenger-data/workspace/project-summary?agentid=data-society&datasetid=air-traffic-passenger-data). This dataset contains over 15,000 entries with information on monthly airline passengers, destinations, and destination airports.
 - Place the downloaded CSV file, **Air_Traffic_Passenger_Statistics.csv**, in the DATA/ folder of the project.
 - Run the **-InitialDataCleaning.py** script to clean the initial dataset by removing unnecessary variables. This will result in the **Cleaned_Air_Traffic_Data.csv** file, which will be used to perform the analysis.
 
