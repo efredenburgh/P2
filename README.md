@@ -54,8 +54,8 @@ Follow the steps below to reproduce the results of this project:
 - Place the downloaded CSV file, **Air_Traffic_Passenger_Statistics.csv**, in the DATA/ folder of the project.
 - Run the **1-InitialDataCleaning.py** script to clean the initial dataset by removing unnecessary variables. This will result in the **Cleaned_Air_Traffic_Data.csv** file, which will be used to perform the analysis.
 
-### Step 2: 
-- 
+### Step 2: Initial Data Exploration
+- To observe initial trends in the data, run the **2-InitialDataPlots.py** script. This will output various plots for exploratory data analysis, including `airline` vs `adjusted_passenger_count`, `month` vs `adjusted_passenger_count`, and `adjusted_passenger_count` vs `year`.
 
 ### Step 3: 
 - 
