@@ -16,29 +16,30 @@ Most coding was performed on a Windows machine, with some portions done using a 
 DS-4002-Project-2/
 │
 ├── DATA/
-│   ├── 
-│   └── 
+│   ├── Air_Traffic_Passenger_Statistics.csv
+│   └── Cleaned_Air_Traffic_Data.csv
 │
 ├── OUTPUT/
 │   ├── Analysis/
 │   │   ├── 
 │   │   └── 
 │   └── Exploratory/
-│       ├── 
-│       └── 
+│       ├── busiest_month.png
+│       ├── domestic_vs_international.png
+│       └── top_airlines.png
 │
 ├── SCRIPTS/
-│   ├── 
-│   └── 
+│   ├── 1-InitialDataCleaning.py
+│   └── 2-InitialDataPlots.py
 │
 ├── LICENSE.md
 └── README.md
 ```
 
-- **DATA/**: Contains the various CSV files used throughout the project. These include the Bechdel movie datasets and sentiment data.
+- **DATA/**: Contains the various CSV files used throughout the project. This includes the initial and cleaned datasets.
 - **OUTPUT/**:
   - **Analysis/**: Folder to store the analysis results.
-  - **Exploratory/**: Contains all the exploratory plots generated, such as sentiment and Bechdel test distributions.
+  - **Exploratory/**: Contains all the exploratory plots generated, such as preliminary trends seen between variables.
 - **SCRIPTS/**: Python scripts used in the project:
   - **_.py**: 
 ---
