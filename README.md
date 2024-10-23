@@ -17,7 +17,8 @@ DS-4002-Project-2/
 │
 ├── DATA/
 │   ├── Air_Traffic_Passenger_Statistics.csv
-│   └── Cleaned_Air_Traffic_Data.csv
+    ├── Cleaned_Air_Traffic_Data.csv
+│   └── Data Appendix P2.pdf
 │
 ├── OUTPUT/
 │   ├── Analysis/
