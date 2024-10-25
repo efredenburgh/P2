@@ -34,7 +34,7 @@ DS-4002-Project-2/
 │   ├── 1-InitialDataCleaning.py
 │   ├── 2-InitialDataPlots.py
 │   ├── 3-StationaritySeasonalityAnalysis.py
-│   ├── 4-data_appendix_coding.ipynb
+│   ├── 4-data appendix coding
 │   └── 
 │
 ├── LICENSE.md
