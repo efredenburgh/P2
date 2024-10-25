@@ -20,4 +20,4 @@ cleaned_data = data[['activity_period', 'operating_airline', 'operating_airline_
                      'geo_summary', 'geo_region', 'adjusted_passenger_count', 'year', 'month']]
 
 
-cleaned_data.to_csv('./DATA/Cleaned_Air_Traffic_Data.csv', index=False)
+cleaned_data.to_csv('./DATA/Cleaned_Air_Traffic_Data.csv', index=False) #export the cleaned data as a csv
