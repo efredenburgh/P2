@@ -1,3 +1,12 @@
+'''
+##Stationarity Seasonality Analysis
+  This script executes a time series analysis on air traffic passenger counts, focusing on trends and seasonality. It loads and processes the dataset, then aggregates 
+  monthly passenger counts, then outputs initial plots to look at the time series features. They are output as PNGs and saved into the OUTPUT/Analysis folder. 
+  Make sure the dataset 'Cleaned_Air_Traffic_Data.csv' is available in the './DATA/' directory.
+
+  It requires the pandas, matplotlib, os, and statsmodels libraries in python.
+'''
+
 import pandas as pd
 import os
 import json
@@ -5,10 +14,10 @@ import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.stattools import adfuller
 
-file_path = './DATA/Cleaned_Air_Traffic_Data.csv'
+file_path = './DATA/Cleaned_Air_Traffic_Data.csv' # load and read the dataset
 data = pd.read_csv(file_path)
 
-output_dir = './OUTPUT/Analysis'
+output_dir = './OUTPUT/Analysis' # direct the output location
 os.makedirs(output_dir, exist_ok=True)
 
 # Convert 'activity_period' to datetime format and set as index
