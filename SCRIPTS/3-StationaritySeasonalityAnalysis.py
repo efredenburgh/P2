@@ -1,5 +1,5 @@
 '''
-##Stationarity Seasonality Analysis
+Stationarity Seasonality Analysis
   This script executes a time series analysis on air traffic passenger counts, focusing on trends and seasonality. It loads and processes the dataset, then aggregates 
   monthly passenger counts, then outputs initial plots to look at the time series features. They are output as PNGs and saved into the OUTPUT/Analysis folder. 
   Make sure the dataset 'Cleaned_Air_Traffic_Data.csv' is available in the './DATA/' directory.
