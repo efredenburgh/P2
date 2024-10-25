@@ -1,0 +1,50 @@
+'''
+Data Appendix Coding
+  This script generates the visualizations contained in the data appendix file, including descriptive statistics and histograms. It only requires the pandas and matplot libraries. 
+  Be sure that the Air_Traffic_Passenger_Statistics.csv and Cleaned_Air_Traffic_Data.csv are in the DATA folder.
+'''
+
+import pandas as pd
+
+data1 = '/content/P2/DATA/Air_Traffic_Passenger_Statistics.csv' # read and load the file
+df1 = pd.read_csv(data1)
+df1.head() # first few rows of the data
+
+summary = df1.describe() #summary statistics
+summary
+
+import matplotlib.pyplot as plt
+
+counts = df1['Passenger Count'].value_counts()
+
+plt.hist(df1['Passenger Count'], bins=10, edgecolor='black') # histogram 
+plt.title('Distribution of Passenger Count')
+plt.xlabel('Passengers')
+plt.ylabel('Frequency')
+plt.show()
+
+plt.hist(df1['Year'], bins=10, edgecolor='black') # histogram
+plt.title('Distribution of Year')
+plt.xlabel('Year')
+plt.ylabel('Flight Frequency')
+plt.show()
+
+data2= '/content/P2/DATA/Cleaned_Air_Traffic_Data.csv' # read the other dataset
+df2 = pd.read_csv(data2)
+df2.head()
+
+summary = df2.describe() # summary statistics
+summary
+
+counts = df2['adjusted_passenger_count'].value_counts() # histogram
+plt.hist(df2['adjusted_passenger_count'], bins=10, edgecolor='black')
+plt.title('Distribution of Passenger Count')
+plt.xlabel('Passengers')
+plt.ylabel('Frequency')
+plt.show()
+
+plt.hist(df2['activity_period'], bins=10, edgecolor='black') # histogram
+plt.title('Distribution of Activity Period')
+plt.xlabel('Activity Period')
+plt.ylabel('Time Frequency')
+plt.show()
