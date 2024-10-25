@@ -1,3 +1,13 @@
+'''
+Initial Data Plots
+    This script will perform exploratory data analysis to identify initial existing trends in the data prior to SARIMA modeling. It generates visualizations highlighting 
+    the busiest month for air travel, the top airlines by passenger numbers, and domestic vs. international passenger volumes. 
+    All plots are saved as PNG files in the specified directory, OUTPUT/Exploratory.
+
+    Make sure the dataset 'Cleaned_Air_Traffic_Data.csv' is available in the './DATA/' directory.
+    This script requires the pandas, os, and matplotlib libraries.
+'''
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
