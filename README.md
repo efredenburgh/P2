@@ -34,8 +34,11 @@ DS-4002-Project-2/
 │   ├── 1-InitialDataCleaning.py
 │   ├── 2-InitialDataPlots.py
 │   ├── 3-StationaritySeasonalityAnalysis.py
-│   ├── 4-data appendix coding
-│   └── 
+│   ├── 4-SARIMAModelImplementation
+|   ├── 5-ModelEvaluation.py
+|   ├── 6-Forecasting.py
+│   └── DataAppendixCoding
+|  
 │
 ├── LICENSE.md
 └── README.md
