@@ -17,22 +17,24 @@ DS-4002-Project-2/
 │
 ├── DATA/
 │   ├── Air_Traffic_Passenger_Statistics.csv
-│   └── Cleaned_Air_Traffic_Data.csv
+|   ├── Cleaned_Air_Traffic_Data.csv
+│   └── Data Appendix P2.pdf
 │
 ├── OUTPUT/
 │   ├── Analysis/
-│   │   ├── 
-│   │   └── 
+│   │   ├── Autocorrelation.png
+│   │   ├── Monthly_Adjusted_Passenger_Counts.png
+│   │   └── Partial_Autocorrelation.png
 │   └── Exploratory/
-│       ├── busiest_month.png
 │       ├── domestic_vs_international.png
+│       ├── busiest_month.png
 │       └── top_airlines.png
 │
 ├── SCRIPTS/
 │   ├── 1-InitialDataCleaning.py
 │   ├── 2-InitialDataPlots.py
 │   ├── 3-StationaritySeasonalityAnalysis.py
-│   ├── 
+│   ├── 4-data appendix coding
 │   └── 
 │
 ├── LICENSE.md
