@@ -19,9 +19,9 @@ P2/
 │   ├── Air_Traffic_Passenger_Statistics.csv
 │   ├── Cleaned_Air_Traffic_Data.csv
 │   ├── Complete_Air_Traffic_Data.csv
+│   ├── Data Appendix P2.pdf
 │   ├── monthly_passenger_data.csv
-│   ├── monthly_passenger_data_diff.csv
-│   └── Data Appendix P2.pdf
+│   └── monthly_passenger_data_diff.csv
 │
 ├── OUTPUT/
 │   ├── Analysis/
