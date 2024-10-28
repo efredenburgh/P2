@@ -48,3 +48,31 @@ plt.title('Distribution of Activity Period')
 plt.xlabel('Activity Period')
 plt.ylabel('Time Frequency')
 plt.show()
+
+data3= '/content/P2/DATA/monthly_passenger_data.csv'
+df3 = pd.read_csv(data3)
+df3.head()
+
+summary = df3.describe()
+summary
+
+counts = df3['adjusted_passenger_count'].value_counts()
+plt.hist(df3['adjusted_passenger_count'], bins=10, edgecolor='black')
+plt.title('Distribution of Passenger Count')
+plt.xlabel('Passengers')
+plt.ylabel('Frequency')
+plt.show()
+
+data5= '/content/P2/DATA/monthly_passenger_data_diff.csv'
+df5 = pd.read_csv(data5)
+df5.head()
+
+summary = df5.describe()
+summary
+
+counts = df5['adjusted_passenger_count'].value_counts()
+plt.hist(df5['adjusted_passenger_count'], bins=10, edgecolor='black')
+plt.title('Distribution of Passenger Count')
+plt.xlabel('Passengers')
+plt.ylabel('Frequency')
+plt.show()
