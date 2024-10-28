@@ -57,7 +57,10 @@ DS-4002-Project-2/
 - **SCRIPTS/**: Python scripts used in the project:
   - **1-InitialDataCleaning.py**: Script to clean the initial data.world dataset.
   - **2-InitialDataPlots.py**: Script to generate exploratory visualizations.
-  - **3-StationaritySeasonalityAnalysis.py**: Script to 
+  - **3-StationaritySeasonalityAnalysis.py**: Script to perform the time series analysis.
+  - **4-SARIMAModelImplementation.py**: Script to fit a SARIMA model to the data.
+  - **5-ModelEvaluation.p**: Script to evaluate the SARIMA model's performance.
+  - **6-Forecasting.py**: Script to predict passenger counts for the next 12-24 months.
 ---
 
 ## Section 3 - Instructions for Reproducing Results
