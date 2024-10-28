@@ -23,11 +23,11 @@ DS-4002-Project-2/
 ├── OUTPUT/
 │   ├── Analysis/
 │   │   ├── Forecasts
-│   │       ├──
-│   │       └── 
+│   │   |   ├──
+│   │   |   └── 
 │   │   ├── Model_Results
-│   │       ├──
-│   │       └── 
+│   │   |   ├──
+│   │   |   └── 
 │   │   ├── Autocorrelation.png
 │   │   ├── Monthly_Adjusted_Passenger_Counts.png
 │   │   └── Partial_Autocorrelation.png
