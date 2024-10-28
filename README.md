@@ -22,6 +22,12 @@ DS-4002-Project-2/
 │
 ├── OUTPUT/
 │   ├── Analysis/
+│   │   ├── Forecasts
+│   │       ├──
+│   │       └── 
+│   │   ├── Model_Results
+│   │       ├──
+│   │       └── 
 │   │   ├── Autocorrelation.png
 │   │   ├── Monthly_Adjusted_Passenger_Counts.png
 │   │   └── Partial_Autocorrelation.png
@@ -89,14 +95,14 @@ Here's the continuation of the steps for your project. Each step builds on the p
 - The script will:
   - Calculate the Mean Absolute Percentage Error (MAPE) and Root Mean Square Error (RMSE) between the predicted and actual passenger counts.
   - Visualize the predicted values alongside the actual values to assess the model's accuracy visually.
-  - Save these evaluation metrics and plots in the `OUTPUT/Model_Results` folder.
+  - Save these evaluation metrics and plots in the `OUTPUT/Analysis/Model_Results` folder.
 - This step verifies the model's predictive power and helps identify any areas for improvement.
 
 ### Step 6: Forecasting Future Trends
 - Run the `6-Forecasting.py` script. This script will use the fitted SARIMA model to forecast future passenger counts for the next 12-24 months.
 - The script will:
   - Generate a forecast plot showing both the historical data and the future predictions.
-  - Save the forecast results and the plot in the `OUTPUT/Forecasts` folder.
+  - Save the forecast results and the plot in the `OUTPUT/Analysis/Forecasts` folder.
 - This final step allows you to visualize expected trends and prepare any further analyses based on the forecasted passenger data.
 
 By following these steps, you will be able to reproduce the time series modeling and forecasting used in this project.
