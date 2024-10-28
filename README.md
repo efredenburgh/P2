@@ -54,7 +54,7 @@ P2/
 - **DATA/**: Contains the various CSV files used throughout the project, including the initial, cleaned, and differenced datasets.
 - **OUTPUT/**:
   - **Analysis/Model Evaluation/**: Contains results from SARIMA modeling and residual analysis.
-  - **Analysis/Exploratory/**: Contains exploratory plots for initial data trends.
+  - **Exploratory/**: Contains exploratory plots for initial data trends.
   - **Analysis/**: Stores analysis plots for time series preparation and stationarity checks.
 - **SCRIPTS/**: Python scripts used in the project:
   - **1-InitialDataCleaning.py**: Cleans the initial dataset by removing unnecessary variables.
