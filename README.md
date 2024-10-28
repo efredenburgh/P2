@@ -78,17 +78,33 @@ Follow the steps below to reproduce the results of this project:
 ### Step 2: Initial Data Exploration
 - To observe initial trends in the data, run the **2-InitialDataPlots.py** script. This will output various plots for exploratory data analysis, including `airline` vs `adjusted_passenger_count`, `month` vs `adjusted_passenger_count`, and `adjusted_passenger_count` vs `year`.
 
+Here are the detailed steps for steps 3, 4, and 5:
+
+---
+
 ### Step 3: Data Preparation and Aggregation
-- Run **3-DataPreparationAggregation.py** to aggregate monthly passenger counts, generating `monthly_passenger_data.csv` and `Monthly_Adjusted_Passenger_Count.png`.
+- Run the **3-DataPreparationAggregation.py** script to prepare the data for time series analysis.
+  - This script loads **Cleaned_Air_Traffic_Data.csv** and converts the `activity_period` column to a datetime format, setting it as the index.
+  - The data is then aggregated to get the total adjusted passenger count for each month.
+  - The resulting monthly data is saved as **monthly_passenger_data.csv** in the `DATA/` folder and is visualized in a plot (`Monthly_Adjusted_Passenger_Count.png`), saved in the main directory.
+  - This step is essential for organizing the data into a structured time series format suitable for SARIMA modeling.
 
 ### Step 4: Time Series Analysis
-- Run **4-StationarityDifferencingAnalysis.py** to conduct time series analysis:
-  - This step outputs `Original_Time_Series.png`, `Differenced_Time_Series.png`, and `Stationary_Differenced_Time_Series.png`.
-  - The script also produces `monthly_passenger_data_diff.csv` for SARIMA modeling.
+- Run the **4-StationarityDifferencingAnalysis.py** script to perform stationarity checks and prepare the data for SARIMA modeling.
+  - This script begins by plotting the original monthly passenger counts (`Original_Time_Series.png`) to observe trends and seasonality.
+  - It then performs the Augmented Dickey-Fuller (ADF) test to assess if the time series is stationary.
+  - If the data is not stationary, the script applies first-order differencing to remove trends, generating **monthly_passenger_data_diff.csv** in the `DATA/` folder.
+  - The differenced data is plotted as `Differenced_Time_Series.png` and `Stationary_Differenced_Time_Series.png` to confirm stationarity visually.
+  - These steps help determine the appropriate differencing level for the SARIMA model.
 
-### Step 5: SARIMA Model Implementation
-- Run **5-SARIMAModelFittingForecasting.py** to fit and evaluate the SARIMA model:
-  - Outputs include `SARIMA_Model_Forecast.png`, `SARIMA_Model_Forecast_Extended.png`, and `ACF_Of_Residuals.png`.
+### Step 5: SARIMA Model Implementation and Forecasting
+- Run the **5-SARIMAModelFittingForecasting.py** script to fit the SARIMA model and produce forecasts.
+  - The script loads **monthly_passenger_data_diff.csv** and fits a SARIMA model with chosen parameters based on previous analyses.
+  - After fitting the model, it outputs a summary of model parameters and statistics.
+  - The script then forecasts future passenger counts for the next 36 months, plotting the forecast alongside the observed data in `SARIMA_Model_Forecast_Extended.png`, with a confidence interval shaded for accuracy insights.
+  - Additionally, the script plots the Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) of residuals in `ACF_Of_Residuals.png` to assess model performance and validate that residuals exhibit minimal autocorrelation.
+
+---
 
 By following these steps, you can reproduce the time series modeling and forecasting results for this project.
 
