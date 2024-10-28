@@ -17,7 +17,7 @@ DS-4002-Project-2/
 │
 ├── DATA/
 │   ├── Air_Traffic_Passenger_Statistics.csv
-|   ├── Cleaned_Air_Traffic_Data.csv
+│   ├── Cleaned_Air_Traffic_Data.csv
 │   └── Data Appendix P2.pdf
 │
 ├── OUTPUT/
@@ -41,10 +41,10 @@ DS-4002-Project-2/
 │   ├── 2-InitialDataPlots.py
 │   ├── 3-StationaritySeasonalityAnalysis.py
 │   ├── 4-SARIMAModelImplementation
-|   ├── 5-ModelEvaluation.py
-|   ├── 6-Forecasting.py
+│   ├── 5-ModelEvaluation.py
+│   ├── 6-Forecasting.py
 │   └── DataAppendixCoding
-|  
+│  
 │
 ├── LICENSE.md
 └── README.md
