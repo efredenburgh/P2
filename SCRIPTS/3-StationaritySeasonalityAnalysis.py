@@ -1,32 +1,36 @@
 '''
 Stationarity Seasonality Analysis
-  This script executes a time series analysis on air traffic passenger counts, focusing on trends and seasonality. It loads and processes the dataset, then aggregates 
-  monthly passenger counts, then outputs initial plots to look at the time series features. They are output as PNGs and saved into the OUTPUT/Analysis folder. 
-  Make sure the dataset 'Cleaned_Air_Traffic_Data.csv' is available in the './DATA/' directory.
-
-  It requires the pandas, matplotlib, os, and statsmodels libraries in python.
+  This script executes a time series analysis on air traffic passenger counts, focusing on trends and seasonality. It loads and processes the dataset, 
+  then aggregates monthly passenger counts, and outputs initial plots to look at the time series features. They are output as PNGs and saved into 
+  the OUTPUT/Analysis folder. Make sure the dataset 'Cleaned_Air_Traffic_Data.csv' is available in the './DATA/' directory.
+  
+  It requires the pandas, matplotlib, os, and statsmodels libraries in Python.
 '''
 
 import pandas as pd
 import os
-import json
 import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.stattools import adfuller
 
-file_path = './DATA/Cleaned_Air_Traffic_Data.csv' # load and read the dataset
+# File path for dataset
+file_path = './DATA/Cleaned_Air_Traffic_Data.csv'
 data = pd.read_csv(file_path)
 
-output_dir = './OUTPUT/Analysis' # direct the output location
+# Output directory for analysis results
+output_dir = './OUTPUT/Analysis'
 os.makedirs(output_dir, exist_ok=True)
 
 # Convert 'activity_period' to datetime format and set as index
 data['activity_period'] = pd.to_datetime(data['activity_period'], format='%Y%m')
 data.set_index('activity_period', inplace=True)
 
+# Save the complete DataFrame with original columns to a CSV file
+complete_output_path = os.path.join('./DATA/', 'Complete_Air_Traffic_Data.csv')
+data.to_csv(complete_output_path)
+
 # Aggregate passenger counts by period
 monthly_passenger_data = data.groupby(data.index)['adjusted_passenger_count'].sum()
-
 
 # Plot the time series
 plt.figure(figsize=(12, 6))
