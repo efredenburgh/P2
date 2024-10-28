@@ -22,10 +22,10 @@ DS-4002-Project-2/
 │
 ├── OUTPUT/
 │   ├── Analysis/
-│   │   ├── Forecasts
+│   │   ├── Forecasts/
 │   │   │   ├──
 │   │   │   └── 
-│   │   ├── Model_Results
+│   │   ├── Model_Results/
 │   │   │   ├──
 │   │   │   └── 
 │   │   ├── Autocorrelation.png
