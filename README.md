@@ -78,10 +78,6 @@ Follow the steps below to reproduce the results of this project:
 ### Step 2: Initial Data Exploration
 - To observe initial trends in the data, run the **2-InitialDataPlots.py** script. This will output various plots for exploratory data analysis, including `airline` vs `adjusted_passenger_count`, `month` vs `adjusted_passenger_count`, and `adjusted_passenger_count` vs `year`.
 
-Here are the detailed steps for steps 3, 4, and 5:
-
----
-
 ### Step 3: Data Preparation and Aggregation
 - Run the **3-DataPreparationAggregation.py** script to prepare the data for time series analysis.
   - This script loads **Cleaned_Air_Traffic_Data.csv** and converts the `activity_period` column to a datetime format, setting it as the index.
@@ -104,7 +100,6 @@ Here are the detailed steps for steps 3, 4, and 5:
   - The script then forecasts future passenger counts for the next 36 months, plotting the forecast alongside the observed data in `SARIMA_Model_Forecast_Extended.png`, with a confidence interval shaded for accuracy insights.
   - Additionally, the script plots the Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) of residuals in `ACF_Of_Residuals.png` to assess model performance and validate that residuals exhibit minimal autocorrelation.
 
----
 
 By following these steps, you can reproduce the time series modeling and forecasting results for this project.
 
